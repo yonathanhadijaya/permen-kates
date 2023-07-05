@@ -2,6 +2,7 @@
 window.onscroll = function () {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
+
   if (window.pageYOffset > fixedNav) {
     header.classList.add("navbar-fixed");
   } else {
@@ -17,3 +18,11 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
 });
+
+//truncate
+const baca = document.querySelector('.baca').querySelector('p');
+const btnBaca = document.querySelector('.baca').querySelector('button');
+
+btnBaca.addEventListener('click', function(){
+  baca.classList.toggle("truncate");
+})
