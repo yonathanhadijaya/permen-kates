@@ -19,10 +19,12 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
 });
 
-//truncate
-const baca = document.querySelector('.baca').querySelector('p');
-const btnBaca = document.querySelector('.baca').querySelector('button');
+function toggleBaca(){
+  this.parentElement.style.display = 'none';
+}
 
-btnBaca.addEventListener('click', function(){
-  baca.classList.toggle("truncate");
-})
+  function toggleBaca(element){
+  // console.log(element.parentElement.children[1]);
+  element.parentElement.children[1].classList.toggle("truncate");
+  element.parentElement.children[0].children[0].classList.toggle("truncate");
+}
