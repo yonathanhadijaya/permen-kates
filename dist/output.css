@@ -647,12 +647,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .mt-1 {
@@ -667,16 +667,8 @@ video {
   margin-top: 1.25rem;
 }
 
-.mr-auto {
-  margin-right: auto;
-}
-
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .inline {
@@ -697,10 +689,6 @@ video {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-9 {
@@ -1157,10 +1145,6 @@ body {
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-48 {
-    width: 12rem;
   }
 
   .md\:scale-125 {
